@@ -9,6 +9,7 @@ public class Main {
         int numero = 0;
         double price, percent;
         do {
+            // Ínicio do Menu
             opcao = Integer.parseInt(JOptionPane.showInputDialog("""
                                                                   -->> Informe sua Opção:
                                                                  1 - FATORIAL
