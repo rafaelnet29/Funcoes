@@ -16,29 +16,24 @@ public class Main {
                                                                  3 - DESCONTO
                                                                  4 - JUROS
                                                                  0 - SAIR"""));
-            switch (opcao) {
-                case 1: {
-                    numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "FATORIAL", 1));
-                    JOptionPane.showMessageDialog(null, new Funcoes(numero).RecursivaFatorial());
-                }
-                case 2: {
-                    numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "PAR ou IMPAR", 1));
-                    new Funcoes(numero).FuncaoParOuImpar();
-                }
-                case 3: {
-                    price = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o preço do produto:", "DESCONTO", 1));
-                    percent = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a porcentagen de desconto:", "DESCONTO", 1));
-                    new Funcoes(price, percent).aplicarDesconto();
-                }
-                case 4: {
-                    new Funcoes(Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o capital aplicado:", "JUROS SIMPLES", 1)),
-                            Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a taxa de juros:", "JUROS SIMPLES", 1)),
-                            Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o tempo:", "JUROS SIMPLES", 1))).juroSimples();
-                }
-                default:
-                    JOptionPane.showMessageDialog(null, "Até a próxima!!", "Menu", 1);
+            if (opcao == 1) {
+                numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "FATORIAL", 1));
+                JOptionPane.showMessageDialog(null, new Funcoes(numero).RecursivaFatorial());
+            } else if (opcao == 2) {
+                numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "PAR ou IMPAR", 1));
+                new Funcoes(numero).FuncaoParOuImpar();
+            } else if (opcao == 3) {
+                price = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o preço do produto:", "DESCONTO", 1));
+                percent = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a porcentagen de desconto:", "DESCONTO", 1));
+                new Funcoes(price, percent).aplicarDesconto();
+            } else if (opcao == 4) {
+                new Funcoes(Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o capital aplicado:", "JUROS SIMPLES", 1)),
+                        Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a taxa de juros:", "JUROS SIMPLES", 1)),
+                        Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o tempo:", "JUROS SIMPLES", 1))).juroSimples();
+            } else {
+                JOptionPane.showMessageDialog(null, "Até a próxima!", "Menu", 1);
             }
-           
+
         } while (opcao != 0);
     }
 }
