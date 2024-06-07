@@ -10,13 +10,13 @@ public class Main {
         double price, percent;
         do {
             // Ínicio do Menu
-            opcao = Integer.parseInt(JOptionPane.showInputDialog("""
+            opcao = Integer.parseInt(JOptionPane.showInputDialog(null,"""
                                                                   -->> Informe sua Opção:
                                                                  1 - FATORIAL
                                                                  2 - PAR ou IMPAR
                                                                  3 - DESCONTO
                                                                  4 - JUROS
-                                                                 0 - SAIR"""));
+                                                                 0 - SAIR""", "Menu", 1));
             if (opcao == 1) {
                 numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "FATORIAL", 1));
                 JOptionPane.showMessageDialog(null, new Funcoes(numero).RecursivaFatorial());

@@ -77,9 +77,10 @@ public class Funcoes {
 
     /**
      * "O juro simples é calculado tendo como base o valor inicial, conhecido
-     * como capital, a taxa de juro e o tempo. A fórmula do juro simples é J = C
-     * ∙ i ∙ t, em que J é o juro, C é o capital, i é a taxa de juro e t é o
-     * tempo." https://brasilescola.uol.com.br/matematica/juros-simples.htm
+     * como capital, a taxa de juro e o tempo. A fórmula do juro simples é 
+     * J = C ∙ i ∙ t, em que J é o juro, C é o capital, i é a taxa de juro e t o
+     * tempo." 
+     * https://brasilescola.uol.com.br/matematica/juros-simples.htm
      * @return 
      */
     public Double juroSimples() {
