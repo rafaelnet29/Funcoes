@@ -15,7 +15,7 @@ public class Funcoes {
     private double juros;
     private double capital;
     
-
+    //construtores
     public Funcoes(double c, double i, int t) {
         this.capital = c;
         this.itaxa = i;
