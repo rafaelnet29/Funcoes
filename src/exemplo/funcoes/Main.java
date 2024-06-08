@@ -1,5 +1,7 @@
 package exemplo.funcoes;
 
+import java.text.MessageFormat;
+
 import javax.swing.JOptionPane;
 
 public class Main {
@@ -19,7 +21,7 @@ public class Main {
                                                                  0 - SAIR""", "Menu", 1));
             if (opcao == 1) {
                 numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "FATORIAL", 1));
-                JOptionPane.showMessageDialog(null, new Funcoes(numero).RecursivaFatorial());
+                JOptionPane.showMessageDialog(null, MessageFormat.format("O Fatorial de {0} é: {1}", numero, new Funcoes(numero).RecursivaFatorial()), "FATORIAL", 1);
             } else if (opcao == 2) {
                 numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "PAR ou IMPAR", 1));
                 new Funcoes(numero).FuncaoParOuImpar();
