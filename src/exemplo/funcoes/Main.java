@@ -1,7 +1,6 @@
 package exemplo.funcoes;
 
 import java.text.MessageFormat;
-
 import javax.swing.JOptionPane;
 
 public class Main {
