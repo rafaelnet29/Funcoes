@@ -6,7 +6,6 @@ import javax.swing.JOptionPane;
 public class Funcoes {
 
     private int num;
-    
     private int tempo;
     private double itaxa;
     private double preco;
@@ -14,7 +13,7 @@ public class Funcoes {
     private double porcentagem;
     private double juros;
     private double capital;
-    
+
     //construtores
     public Funcoes(double c, double i, int t) {
         this.capital = c;
@@ -33,10 +32,12 @@ public class Funcoes {
 
     /**
      * Função recursiva fatorial de um número
-     * @return 
+     *
+     * @return
      */
     public int RecursivaFatorial() {
 
+        @SuppressWarnings("UnusedAssignment")
         int fatorial = 0;
         if (num == 0) {
             return 1;
@@ -48,7 +49,8 @@ public class Funcoes {
 
     /**
      * Função para descobrir se um número é PAR ou ÍMPAR
-     * @return 
+     *
+     * @return
      */
     public int FuncaoParOuImpar() {
 
@@ -64,7 +66,8 @@ public class Funcoes {
 
     /**
      * Alipcando descontos
-     * @return 
+     *
+     * @return
      */
     public Double aplicarDesconto() {
 
@@ -77,18 +80,18 @@ public class Funcoes {
 
     /**
      * "O juro simples é calculado tendo como base o valor inicial, conhecido
-     * como capital, a taxa de juro e o tempo. A fórmula do juro simples é 
-     * J = C ∙ i ∙ t, em que J é o juro, C é o capital, i é a taxa de juro e t o
-     * tempo." 
-     * https://brasilescola.uol.com.br/matematica/juros-simples.htm
-     * @return 
+     * como capital, a taxa de juro e o tempo. A fórmula do juro simples é J = C
+     * ∙ i ∙ t, em que J é o juro, C é o capital, i é a taxa de juro e t o
+     * tempo." https://brasilescola.uol.com.br/matematica/juros-simples.htm
+     *
+     * @return
      */
     public Double juroSimples() {
         //Juros
-        juros = (capital * itaxa * tempo);
+        juros = (capital * (itaxa/100) * tempo);
         //Montante
         total = juros + capital;
-        
+
         JOptionPane.showMessageDialog(null,
                 MessageFormat.format("O valor do juros é: ${0} reais em cima do capital ${1} reais. montante: ${2} reais ",
                         juros, capital, total), "Juros simples ", 1);
