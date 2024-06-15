@@ -31,9 +31,8 @@ public class Funcoes {
     }
 
     /**
-     * Função recursiva fatorial de um número
-     *
      * @return
+     * Função recursiva para o fatorial de um número
      */
     public int RecursivaFatorial() {
 
@@ -48,9 +47,9 @@ public class Funcoes {
     }
 
     /**
-     * Função para descobrir se um número é PAR ou ÍMPAR
-     *
+     * 
      * @return
+     * Função para descobrir se um número é PAR ou ÍMPAR
      */
     public int FuncaoParOuImpar() {
 
@@ -68,6 +67,7 @@ public class Funcoes {
      * Alipcando descontos
      *
      * @return
+     * Aplica desconto em porcentagem(%) ao valor informado 
      */
     public Double aplicarDesconto() {
 
