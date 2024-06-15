@@ -86,6 +86,7 @@ public class Funcoes {
      *
      * @return
      */
+    //falta consertar
     public Double juroSimples() {
         //Juros
         juros = (capital * (itaxa/100) * tempo);
@@ -96,6 +97,6 @@ public class Funcoes {
                 MessageFormat.format("O valor do juros é: ${0} reais em cima do capital ${1} reais. montante: ${2} reais ",
                         juros, capital, total), "Juros simples ", 1);
 
-        return juros;
+        return total;
     }
 }
