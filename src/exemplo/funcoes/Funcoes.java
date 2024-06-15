@@ -84,14 +84,16 @@ public class Funcoes {
      * ∙ i ∙ t, em que J é o juro, C é o capital, i é a taxa de juro e t o
      * tempo." https://brasilescola.uol.com.br/matematica/juros-simples.htm
      *
-     * @return
+     * @return 
+     * O Metodo caulcula o juros de período anual
      */
-    //falta consertar
+    
     public Double juroSimples() {
-        //Juros
-        juros = (capital * (itaxa/100) * tempo);
+        //Juros Anual
+        juros = (capital * (itaxa / 100) * tempo);
+
         //Montante
-        total = juros + capital;
+        total = capital + juros;
 
         JOptionPane.showMessageDialog(null,
                 MessageFormat.format("O valor do juros é: ${0} reais em cima do capital ${1} reais. montante: ${2} reais ",
