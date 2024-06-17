@@ -9,14 +9,16 @@ public class Main {
         int opcao = 0;
         int numero = 0;
         double price, percent;
+        String palavra = "";
         do {
             // Ínicio do Menu
-            opcao = Integer.parseInt(JOptionPane.showInputDialog(null,"""
+            opcao = Integer.parseInt(JOptionPane.showInputDialog(null, """
                                                                   -->> Informe sua Opção:
                                                                  1 - FATORIAL
                                                                  2 - PAR ou IMPAR
                                                                  3 - DESCONTO
                                                                  4 - JUROS
+                                                                 5 - PALÍNDROMO
                                                                  0 - SAIR""", "Menu", 1));
             if (opcao == 1) {
                 numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um Número:", "FATORIAL", 1));
@@ -32,6 +34,9 @@ public class Main {
                 new Funcoes(Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o capital aplicado:", "JUROS SIMPLES", 1)),
                         Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a taxa de juros:", "JUROS SIMPLES", 1)),
                         Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o tempo:", "JUROS SIMPLES", 1))).juroSimples();
+            } else if (opcao == 5) {
+                palavra = JOptionPane.showInputDialog(null, "Informe uma palavra para verificar se é ou não Palimdromo(a):", "Palíndroma", 1);
+                new Funcoes(palavra).palindroma();
             } else {
                 JOptionPane.showMessageDialog(null, "Até a próxima!", "Menu", 1);
             }
