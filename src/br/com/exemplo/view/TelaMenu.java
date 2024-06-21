@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package exemplo.funcoes;
+package br.com.exemplo.view;
 
+import br.com.exemplo.funcoes.Funcoes;
 import java.text.MessageFormat;
 import javax.swing.JOptionPane;
 
@@ -83,7 +84,6 @@ public class TelaMenu extends javax.swing.JFrame {
         btnPalindromo.setBackground(new java.awt.Color(0, 0, 0));
         btnPalindromo.setForeground(new java.awt.Color(255, 255, 255));
         btnPalindromo.setText("PALÍNDROMO");
-        btnPalindromo.setActionCommand("PALÍNDROMO");
         btnPalindromo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPalindromoActionPerformed(evt);
@@ -104,9 +104,8 @@ public class TelaMenu extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnPalindromo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnJuros_Simples, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btnFatorial, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnPar_Impar, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(btnFatorial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPar_Impar)
                     .addComponent(btnDesconto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(130, 130, 130))
             .addGroup(jPanel1Layout.createSequentialGroup()

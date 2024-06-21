@@ -1,4 +1,4 @@
-package exemplo.funcoes;
+package br.com.exemplo.funcoes;
 
 import java.text.MessageFormat;
 import javax.swing.JOptionPane;

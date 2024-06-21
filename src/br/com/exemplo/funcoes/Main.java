@@ -1,4 +1,6 @@
-package exemplo.funcoes;
+package br.com.exemplo.funcoes;
+
+import br.com.exemplo.view.TelaMenu;
 
 public class Main {
 
