@@ -36,7 +36,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="99" red="99" type="rgb"/>
+          <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
       </Properties>
 
@@ -48,11 +48,13 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnPalindromo" max="32767" attributes="0"/>
                       <Component id="btnJuros_Simples" max="32767" attributes="0"/>
-                      <Component id="btnFatorial" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnPar_Impar" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnDesconto" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="btnDesconto" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnPar_Impar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnFatorial" alignment="0" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                  <EmptySpace pref="130" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
@@ -161,7 +163,7 @@
               <Font name="Times New Roman" size="36" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="0" red="0" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="FUN&#xc7;&#xd5;ES &#xda;TEIS"/>
           </Properties>
