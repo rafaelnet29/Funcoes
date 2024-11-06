@@ -76,7 +76,7 @@ public class Funcoes {
 
         total = (preco - ((porcentagem / 100) * preco));
         JOptionPane.showMessageDialog(null,
-                MessageFormat.format("O valor do desconto é = {0} '%' em cima de ${1} reais. Total a pagar: ${2} reais ",
+                MessageFormat.format("O valor do desconto é = {0} '%' em cima de ${1} reais.\n Total a pagar: ${2} reais ",
                         porcentagem, preco, total), "Desconto ", 1);
         return total;
     }
