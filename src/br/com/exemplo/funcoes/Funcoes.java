@@ -102,22 +102,23 @@ public class Funcoes {
 
         return total;
     }
-    
+
     /**
      * Palíndromo
-     * @return 
-     * Método responsável para determinar se uma 
-     * palavra ou número é Palíndromo
+     *
+     * @return Método responsável para determinar se uma palavra ou número é
+     * Palíndromo
+     * @return Função esta apresentando problemas
      */
     public String palindroma() {
 
         for (int i = palavra.length() - 1; i >= 0; i--) {
             palavraPalindroma += palavra.charAt(i);
         }
-        if (!(palavraPalindroma == palavra)) {
-            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa é uma palavra palíndroma: {0} é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
-        } else {
+        if (palavraPalindroma != palavra) {
             JOptionPane.showMessageDialog(null, MessageFormat.format("Essa não é uma palavra palíndroma: {0} não é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
+        } else {
+            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa é uma palavra palíndroma: {0} é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
         }
         return palavra;
     }
