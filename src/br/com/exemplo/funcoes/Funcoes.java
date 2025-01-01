@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 public class Funcoes {
 
-    private int num;
+    private int num; 
     private int tempo;
     private double itaxa;
     private double preco;
@@ -108,10 +108,10 @@ public class Funcoes {
      *
      * @return Método responsável para determinar se uma palavra ou número é
      * Palíndromo
-     * @return Função esta apresentando problemas
+     * @return Palíndromo
      */
     public String palindroma() {
-
+        //Função esta apresentando problemas
         for (int i = palavra.length() - 1; i >= 0; i--) {
             palavraPalindroma += palavra.charAt(i);
         }
