@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 public class Funcoes {
 
-    private int num; 
+    private int num;
     private int tempo;
     private double itaxa;
     private double preco;
@@ -111,14 +111,14 @@ public class Funcoes {
      * @return Palíndromo
      */
     public String palindroma() {
-        //Função esta apresentando problemas
+       
         for (int i = palavra.length() - 1; i >= 0; i--) {
             palavraPalindroma += palavra.charAt(i);
         }
-        if (palavraPalindroma != palavra) {
-            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa não é uma palavra palíndroma: {0} não é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
-        } else {
+        if (palavraPalindroma.equals(palavra)) {
             JOptionPane.showMessageDialog(null, MessageFormat.format("Essa é uma palavra palíndroma: {0} é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
+        } else {
+            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa não é uma palavra palíndroma: {0} não é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
         }
         return palavra;
     }
