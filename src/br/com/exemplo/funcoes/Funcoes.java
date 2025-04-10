@@ -116,9 +116,9 @@ public class Funcoes {
             palavraPalindroma += palavra.charAt(i);
         }
         if (palavraPalindroma.equals(palavra)) {
-            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa é uma palavra palíndroma: {0} é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
+            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa é uma palavra e/ou número palíndroma(o): {0} é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
         } else {
-            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa não é uma palavra palíndroma: {0} não é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
+            JOptionPane.showMessageDialog(null, MessageFormat.format("Essa não é uma palavra e/ou número palíndroma(o): {0} não é o reverso de {1} ", palavra, palavraPalindroma), "Palavra Palímdroma", 1);
         }
         return palavra;
     }

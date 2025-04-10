@@ -188,9 +188,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="SAIR"/>
           </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SAIR"/>
-          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>

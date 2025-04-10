@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  *
  * @author rafae
  */
-public class TelaMenu extends javax.swing.JFrame {
+public final class TelaMenu extends javax.swing.JFrame {
 
     private int num;
   
