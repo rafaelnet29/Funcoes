@@ -108,7 +108,6 @@ public class Funcoes {
      *
      * @return Método responsável para determinar se uma palavra ou número é
      * Palíndromo
-     * @return palíndromo
      */
     public String palindroma() {
        
